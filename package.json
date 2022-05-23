@@ -10,9 +10,16 @@
     "@types/node": "^16.11.36",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
+    "axios": "^0.26.0",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "classnames": "^2.3.1",
+    "bootstrap": "5.1.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-router": "5.1.2",
+    "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.1",
+    "sass": "^1.52.1",
     "typescript": "^4.6.4",
     "web-vitals": "^2.1.4"
   },
@@ -20,7 +27,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "npx eslint --ext .js,.jsx,.ts,.tsx src --color",
+    "format": "prettier --write src/**/*.{tsx,scss}",
+    "pre-commit": "lint-staged"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +49,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.4.2",
+    "babel-plugin-istanbul": "^6.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "prettier": "^2.6.2"
   }
 }
